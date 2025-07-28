@@ -1,1 +1,140 @@
-<h>desinix</h>
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desinix | Web Designing Course</title>
+  <link rel="icon" href="https://i.ibb.co/5hfrKF7t/loogo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #2b1055, #7597de);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.2);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 28px;
+      color: #fff;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #00ffe1;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 20px;
+    }
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00ffe1, #0077ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+    .hero button {
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      background: #00ffe1;
+      color: #000;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hero button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffe1;
+    }
+    .floating-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .floating-shapes span {
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      animation: float 20s linear infinite;
+      border-radius: 50%;
+    }
+    .floating-shapes span:nth-child(odd) {
+      background: rgba(255,255,255,0.05);
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+      }
+      100% {
+        transform: translateY(-10vh) scale(0.5);
+      }
+    }
+  </style>
+<script defer="" data-domain="desinix-course.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+<body>
+  <header>
+    <h1>Desinix</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="dashboard.html">Courses</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Master Web Designing with Desinix</h2>
+    <p>Join our professional course and learn how to build stunning, responsive websites using HTML, CSS, JavaScript, and more.</p>
+    <button onclick="location.href='signup.html'">Join Now</button>
+  </div>
+
+  <div class="floating-shapes">
+    <span style="left: 10%; animation-delay: 0s; width: 60px; height: 60px;"></span>
+    <span style="left: 25%; animation-delay: 2s;"></span>
+    <span style="left: 40%; animation-delay: 4s;"></span>
+    <span style="left: 55%; animation-delay: 1s; width: 30px; height: 30px;"></span>
+    <span style="left: 70%; animation-delay: 3s;"></span>
+    <span style="left: 85%; animation-delay: 5s; width: 50px; height: 50px;"></span>
+  </div>
+
+
+</body></html>
